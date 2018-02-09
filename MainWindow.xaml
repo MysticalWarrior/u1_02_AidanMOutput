@@ -1,0 +1,32 @@
+﻿<Window x:Class="u1_02_AidanMOutput.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:u1_02_AidanMOutput"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1280">
+    <StackPanel>
+        <Label x:Name="lblTitle"
+               Content="Welcome to my box, it is big"
+               FontFamily="Comic Sans MS"  
+               FontSize="48"
+               HorizontalContentAlignment="Center"
+               />
+        <TextBox x:Name="entryName"
+                 Height="72"
+                 />
+        <Button x:Name="btnShowGreeting"
+                Content="Type your name in the box above and then click this button"
+                Height="72"
+                FontSize="48"
+                FontFamily="Times New Roman"
+                Click="btnShowGreeting_Click"
+                HorizontalAlignment="Center"
+                />
+        <Label x:Name="lblOutput"
+               FontFamily="Comic Sans MS"
+               FontSize="36"
+               />
+    </StackPanel>
+</Window>
